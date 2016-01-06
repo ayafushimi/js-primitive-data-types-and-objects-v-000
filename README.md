@@ -29,7 +29,7 @@ JavaScript has six primitive data types:
 Primitive values are created using the literal constructor for each data type. 
 
 ```js
-var name = "joe"
+var name = "joe";
 typeof name;
 // returns "string"
 
@@ -44,7 +44,7 @@ typeof truth;
 
 ## Objects
 
-In JavaScripe, objects can be seen as a collection of properties. You can think of them as most similiar to Ruby hashes, but with superpowers of storing functions as values in addition to the standard strings, numbers, etc.
+In JavaScript, objects can be seen as a collection of properties. You can think of them as most similiar to Ruby hashes, but with superpowers of storing functions as values in addition to the standard strings, numbers, etc.
 
 Objects are created using the New constructor:
 
@@ -85,7 +85,7 @@ Given the following code:
 ```js
   var greeting = "hello";
   var word = new String("hello");
-  word == greeting; 
+  word === greeting; 
   // returns false
 ```
 
