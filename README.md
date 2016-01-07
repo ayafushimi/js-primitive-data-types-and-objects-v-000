@@ -89,7 +89,7 @@ Given the following code:
   // returns false
 ```
 
-Using the type comparison operator, `greeting` and `word` are not the same type (one is a primitive value and the other an object) so we wouldn't expect them to be equal. But you can use convenience methods to manipulate both in the same way
+The `===` is a type comparison operator. This means that it checks not just value, but data type. If the value and the data type don't match, it returns false. Using the type comparison operator, `greeting` and `word` are not the same type (one is a primitive value and the other an object) so we wouldn't expect them to be equal. But you can use convenience methods to manipulate both in the same way
 
 Because of this, you want to use the literal constructor as much as possible. For all intents and purposes, you can use the literal constructor and the new constructor in same way, but your application will be much faster with the literal constructor.
 
