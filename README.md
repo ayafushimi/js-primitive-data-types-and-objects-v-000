@@ -5,11 +5,11 @@
 + Explain what an object is
 + Create a primitive data type
 + Create an object
-+ Explain why use the literal constructor over the new constructor
++ Explain why to use the literal constructor over the new constructor
 
 While JavaScript shares a lot of the same data types with Ruby, it does handle them a little bit differently.
 
-In Ruby, every data type is an object. A string (whether its made with the literal constructor or `String.new`) is considered an instance of the String class. Also in Ruby, every object is mutable, which means you can change the object with methods like `upcase` and `swapcase`.
+In Ruby, every data type is an object. A string (whether it's made with the literal constructor or `String.new`) is considered an instance of the String class. Also in Ruby, every object is mutable, which means you can change the object with methods like `upcase` and `swapcase`.
 
 In JavaScript, data types fall into two categories: **primitive data types** and **objects** and they behave very differently.
 
@@ -39,12 +39,12 @@ typeof cents;
 
 var truth = true;
 typeof truth;
-//returns "boolean"
+// returns "boolean"
 ```
 
 ## Objects
 
-In JavaScript, objects can be seen as a collection of properties. You can think of them as most similiar to Ruby hashes, but with superpowers of storing functions as values in addition to the standard strings, numbers, etc.
+In JavaScript, objects can be seen as a collection of properties. You can think of them as most similar to Ruby hashes but with the superpower of storing functions as values in addition to the standard strings, numbers, etc.
 
 Objects are created using the New constructor:
 
@@ -89,9 +89,8 @@ Given the following code:
   // returns false
 ```
 
-The `===` is a type comparison operator. This means that it checks not just value, but data type. If the value and the data type don't match, it returns false. Using the type comparison operator, `greeting` and `word` are not the same type (one is a primitive value and the other an object) so we wouldn't expect them to be equal. But you can use convenience methods to manipulate both in the same way
+The `===` is a type comparison operator. This means that it checks not just value, but data type. If the value and the data type don't match, it returns false. Using the type comparison operator, `greeting` and `word` are not the same type (one is a primitive value and the other an object) so we wouldn't expect them to be equal. But you can use convenience methods to manipulate both in the same way.
 
 Because of this, you want to use the literal constructor as much as possible. For all intents and purposes, you can use the literal constructor and the new constructor in same way, but your code will process much more quickly with the literal constructor.
-
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-primitive-data-types-and-objects' title='JavaScript Primitive Data Types and Objects'>JavaScript Primitive Data Types and Objects</a> on Learn.co and start learning to code for free.</p>
